@@ -20,6 +20,7 @@ function App() {
   const [showAllText, setShowAllText] = useState('Show all articles')
   const [pageTitle, setPageTitle] = useState('About me')
 
+
   const Article = (props) => {
     return (
       <article className={`article ${getActiveClassName(activeArticle, props.class , 'all')}`}>
@@ -51,11 +52,12 @@ function App() {
         <h4>JavaScript Ramverk - Week 1 – Assignment 1</h4>
       </header>
 
-      <div>
-          <h1 className="titel-page">Assignment 1 - {pageTitle}</h1>
-      </div>
-
       <div className='content-container'>  
+
+        <div>
+            <h1 className="titel-page">Assignment 1 - {pageTitle}</h1>
+        </div>
+
         <div className='article-container'>
           <Article 
             class='First Article'

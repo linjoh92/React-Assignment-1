@@ -14,23 +14,31 @@
   box-sizing: border-box;
 }
 
-body{
+body {
+  height: 100vh;
   margin: 0;
+}
+
+#root {
+  height: 100vh;
 }
 
 .body-container{
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  min-height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0px;
 }
 
 .content-container {
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 72%;
-  padding: 0 30px;
+  flex-grow: 1;
+  justify-content: start;
+  margin: 30px 10px;
 }
 
 header {
@@ -150,13 +158,9 @@ header {
 footer{
   align-items: center;
   border-top: 1px solid var(--grey-color);
-  bottom: -100px;
   display: flex;
   height: 70px;
   justify-content: center;
-  margin-top: 20px;
-  position: absolute;
-  width: 100%;
 }
 
 .footer-text{
