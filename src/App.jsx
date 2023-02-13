@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Me from './assets/founder_linn.jpeg'
 import Styling_Page from './assets/styling_page_friday.jpeg'
-import Friday from './assets/friyay.jpeg'
+import Friday from './assets/friyay.png'
 import './App.css'
 
 function getActiveClassName (activeArticle, currentArticle, showAllArticles) {
@@ -27,7 +27,11 @@ function App() {
         <h2 className="titel">{props.title}</h2>
         <p>{props.content1}</p>
         <p>{props.content2}</p>
-        <div className="img-container"><img className="img" src={props.image} alt={props.title} /></div>
+        <div className="img-container"><img className="img" src={props.image} alt={props.title}/></div>
+        <p>
+          <a href={props.link} className={props.linkClass} target="_blank">{props.linkText}</a>
+          <a href={props.link2} className={props.linkClass} target="_blank">{props.linkText2}</a>
+        </p>
       </article>
     )
   }
@@ -76,9 +80,13 @@ function App() {
           <Article 
             class='3rd Article'
             title='Style idé'
-            content1='Funny friday team! This page will give you super peppy styling that contributes to the counters.'
-            content2='I look on dribble and found this. I think the colors and the playfulness is perfect for my page.'
+            content1='Funny friday team! This page will give you super peppy styling that contributes to the counters. I look on dribble and found this. I think the colors and the playfulness is perfect for my page.'
             image={Styling_Page}
+            link= "https://www.freepik.com/free-psd/horizontal-banner-out-our-planet-music-concert_13525013.htm#&position=0&from_view=undefined"
+            link2= "https://www.figma.com/file/TcfO0Y36EZkuxCd9AFryvZ/Untitled?node-id=0%3A1&t=gs6lmbCQ21FBkH5V-1"
+            linkClass= 'link'
+            linkText= 'Design on Freepik.com'
+            linkText2= 'My redesign in Figma'
           />
         </div>
         

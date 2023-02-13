@@ -85,7 +85,23 @@ header {
 .img-container{
   display: flex;
   justify-content: center;
-  padding: 10px 0 0;
+  padding: 10px;
+}
+
+.link{
+  color: var(--secondary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  margin: 0;
+  font-size: 0.8rem;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+.link:hover{
+  opacity: 50%;
 }
 
 .switch {
