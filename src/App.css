@@ -90,14 +90,14 @@ header {
 
 .link{
   color: var(--secondary-color);
-  text-decoration: none;
-  text-transform: uppercase;
   display: flex;
-  margin: 0;
   font-size: 0.8rem;
+  font-weight: 500;
   justify-content: center;
   letter-spacing: 0.1rem;
-  font-weight: 500;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .link:hover{
